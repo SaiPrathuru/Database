@@ -1,0 +1,2 @@
+CREATE USER [LinkedServer_XBI1DW001] FOR LOGIN [LinkedServer_XBI1DW001]
+GO

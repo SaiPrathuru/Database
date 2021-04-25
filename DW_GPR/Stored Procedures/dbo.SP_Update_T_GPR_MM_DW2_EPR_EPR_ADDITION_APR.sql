@@ -1,0 +1,31 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE          PROCEDURE [dbo].[SP_Update_T_GPR_MM_DW2_EPR_EPR_ADDITION_APR]
+(@EPR_EPR_MASTER_ID INT,
+@EPR_ADDITION_APPR NVARCHAR(100),
+@UPDATEDATETIME	DATETIME)
+	  
+AS
+
+BEGIN
+
+SET NOCOUNT ON;
+
+
+UPDATE dbo.T_GPR_MM_DW2_EPR_EPR_ADDITION_APR
+
+SET
+[EPR_ADDITION_APPR] 	=@EPR_ADDITION_APPR,
+UPDATEDATETIME	=@UPDATEDATETIME
+
+WHERE EPR_EPR_MASTER_ID = @EPR_EPR_MASTER_ID  AND [EPR_ADDITION_APPR]=@EPR_ADDITION_APPR
+
+END
+GO
