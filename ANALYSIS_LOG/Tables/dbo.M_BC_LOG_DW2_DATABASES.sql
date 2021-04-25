@@ -1,0 +1,5 @@
+CREATE TABLE [dbo].[M_BC_LOG_DW2_DATABASES]
+(
+[DatabaseName] [nvarchar] (256) COLLATE Japanese_XJIS_100_BIN2 NULL
+) ON [PRIMARY]
+GO

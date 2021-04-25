@@ -1,0 +1,31 @@
+CREATE TABLE [dbo].[M_CAL]
+(
+[Date] [date] NOT NULL,
+[Sequential_Day_Counter] [int] NULL,
+[Sequential_Day_Number] [int] NULL,
+[THIS_MONTH_S] [date] NULL,
+[THIS_MONTH_E] [date] NULL,
+[THIS_MONTH] [char] (7) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[DAY_NUMBER] [int] NULL,
+[WEEK_NUMBER] [int] NULL,
+[MONTH_NUMBER] [int] NULL,
+[QUARTER_NUMBER] [int] NULL,
+[HALF_NUMBER] [int] NULL,
+[YEAR_NUMBER] [int] NULL,
+[Day Type] [nvarchar] (50) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Week Type] [nvarchar] (50) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Month Type] [nvarchar] (50) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Quarter Type] [nvarchar] (50) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Half Type] [nvarchar] (50) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Year Type] [nvarchar] (50) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Year] [char] (4) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Half] [nvarchar] (10) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Quarter] [nvarchar] (10) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Month] [nvarchar] (10) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Week] [nvarchar] (10) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Day] [nvarchar] (10) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Fiscal Year] [char] (4) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Fiscal Half] [nvarchar] (10) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Fiscal Quarter] [nvarchar] (10) COLLATE Japanese_XJIS_100_BIN2 NULL
+) ON [PRIMARY]
+GO

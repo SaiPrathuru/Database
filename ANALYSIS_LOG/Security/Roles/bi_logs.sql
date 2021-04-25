@@ -1,0 +1,3 @@
+CREATE ROLE [bi_logs]
+AUTHORIZATION [dbo]
+GO

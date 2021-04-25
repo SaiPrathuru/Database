@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[TPRC_LOGM_EX_LOCALJOBTITLE]
+(
+[Local Job Title] [nvarchar] (128) COLLATE Japanese_XJIS_100_BIN2 NOT NULL,
+[Local Job Title Group] [nvarchar] (128) COLLATE Japanese_XJIS_100_BIN2 NULL,
+[Local Job Title Group 2] [nvarchar] (128) COLLATE Japanese_XJIS_100_BIN2 NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[TPRC_LOGM_EX_LOCALJOBTITLE] ADD CONSTRAINT [PK_lkpJobTitle] PRIMARY KEY CLUSTERED  ([Local Job Title]) ON [PRIMARY]
+GO
